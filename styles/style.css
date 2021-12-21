@@ -1,0 +1,48 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+article{
+    height: 400px;
+}
+body{
+    background: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    /*font-family: 'Lexend Deca', sans-serif;*/
+}
+button{
+    background-color: var(--Very-light-gray);
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700px;
+}
+html{
+    box-sizing: border-box;
+}
+p{
+    color: var(--Transparent-white);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    margin: 1em auto;
+    width: 90%;
+}
+.col-body-left{
+    background: var(--Bright-orange);
+}
+.col-body-medium{
+    background: var(--Dark-cyan);
+}
+.col-body-rigth{
+    background: var(--Very-dark-cyan);
+}
