@@ -1,48 +1,78 @@
 :root{
-    --Bright-orange: hsl(31, 77%, 52%);
-    --Dark-cyan: hsl(184, 100%, 22%);
-    --Very-dark-cyan: hsl(179, 100%, 13%);
-    --Transparent-white: hsla(0, 0%, 100%, 0.75);
-    --Very-light-gray: hsl(0, 0%, 95%);
+    --brigth-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --very-light-gray: hsl(0, 0%, 95%);
 }
-article{
-    height: 400px;
+
+body {
+    background: var(--very-light-gray);
+    overflow: hidden;
 }
-body{
-    background: var(--Very-light-gray);
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    /*font-family: 'Lexend Deca', sans-serif;*/
-}
-button{
-    background-color: var(--Very-light-gray);
-}
-h1{
+
+
+h2 {
+    color: white;
+    margin-top: 35px;
     font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700px;
-}
-html{
-    box-sizing: border-box;
-}
-p{
-    color: var(--Transparent-white);
+    font-size: 42px;
+    letter-spacing: 1.7px;
 }
 
-.cards{
+p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;    
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.button {
+    background-color: var(--very-light-gray);
+    border: none;
+    border-radius: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    margin-top: 70px;
+    padding: 15px 30px;
+}
+
+.button-section-one {
+    color: var(--brigth-orange);
+}
+
+.button-section-two {
+    color: var(--dark-cyan);
+}
+
+.button-section-three {
+    color: var(--very-dark-cyan);
+}
+
+.car-description {
+    padding: 48px;
+}
+
+.car-1 {
+    background-color: var(--brigth-orange);
+    border-radius: 12px 0px 0px 12px;
+}
+
+.car-2 {
+    background-color: var(--dark-cyan);
+}
+
+.car-3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 12px 12px 0px;
+}
+
+.container {
+    align-items: center;
     display: flex;
-    justify-content: space-around;
-}
-
-.container{
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
     margin: 1em auto;
-    width: 90%;
-}
-.col-body-left{
-    background: var(--Bright-orange);
-}
-.col-body-medium{
-    background: var(--Dark-cyan);
-}
-.col-body-rigth{
-    background: var(--Very-dark-cyan);
+    width: 70%;
 }
